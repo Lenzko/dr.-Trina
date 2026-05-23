@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Untuk dr. Trina🌸</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:linear-gradient(
+        135deg,
+        #ffd6e7,
+        #ffc2d1,
+        #ffe5ec,
+        #f9bec7
+      );
+      color:#5c374c;
+      overflow-x:hidden;
+    }
+
+    .particles{
+      position:fixed;
+      inset:0;
+      background-image:
+      radial-gradient(circle, rgba(255,255,255,0.35) 1px, transparent 1px);
+      background-size:40px 40px;
+      animation:moveBg 20s linear infinite;
+      z-index:-1;
+    }
+
+    @keyframes moveBg{
+      from{
+        transform:translateY(0);
+      }
+      to{
+        transform:translateY(-40px);
+      }
+    }
+
+    .page{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:40px 20px;
+    }
+
+    .card{
+      width:100%;
+      max-width:850px;
+      background:rgba(255,255,255,0.45);
+      backdrop-filter:blur(14px);
+      border:1px solid rgba(255,255,255,0.5);
+      border-radius:30px;
+      padding:50px;
+      text-align:center;
+      box-shadow:0 10px 40px rgba(255,182,193,0.35);
+      animation:fadeUp 1s ease;
+    }
+
+    h1{
+      font-size:3rem;
+      margin-bottom:20px;
+    }
+
+    h2{
+      font-size:2rem;
+      margin-bottom:25px;
+    }
+
+    h3{
+      margin-top:20px;
+    }
+
+    p{
+      font-size:1.05rem;
+      line-height:2;
+      margin-bottom:20px;
+    }
+
+    .highlight{
+      color:#d63384;
+      font-style:italic;
+      font-weight:600;
+    }
+
+    button{
+      margin-top:25px;
+      padding:15px 35px;
+      border:none;
+      border-radius:50px;
+      font-size:1rem;
+      font-weight:600;
+      cursor:pointer;
+      background:#ff8fab;
+      color:white;
+      transition:0.3s;
+      box-shadow:0 5px 15px rgba(255,143,171,0.4);
+    }
+
+    button:hover{
+      transform:scale(1.05);
+      background:#fb6f92;
+    }
+.rtk{
+  color: #E6C068;
+  font-style: italic;
+  font-weight: 600;
+
+  background: linear-gradient(
+    90deg,
+    #b8860b 0%,
+    #E6C068 35%,
+    #fff4c2 50%,
+    #E6C068 65%,
+    #b8860b 100%
+  );
+
+  background-size: 200% auto;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 0 6px rgba(230,192,104,0.35);
+
+  animation: rtkShine 3s linear infinite;
+}
+
+@keyframes rtkShine{
+  to{
+    background-position: 200% center;
+  }
+}
+    .game-area{
+      width:100%;
+      min-height:600px;
+      background:rgba(255,255,255,0.3);
+      border-radius:25px;
+      margin-top:25px;
+      position:relative;
+      overflow:hidden;
+      padding:20px;
+    }
+
+    .flower{
+      position:absolute;
+      font-size:2.2rem;
+      cursor:pointer;
+      animation:pop 0.3s ease;
+      user-select:none;
+    }
+
+    .finish-animation{
+      width:100%;
+      min-height:100%;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      animation:fadeIn 1s ease;
+      padding:30px 20px;
+    }
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:30px;
+}
+
+.gallery-grid img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  border-radius:22px;
+  border:3px solid rgba(255,255,255,0.45);
+  box-shadow:0 10px 25px rgba(255,182,193,0.25);
+  transition:0.4s;
+}
+
+.gallery-grid img:hover{
+  transform:scale(1.03);
+}
+
+@media(max-width:768px){
+
+  .gallery-grid{
+    grid-template-columns:1fr;
+  }
+
+  .gallery-grid img{
+    height:220px;
+  }
+
+}
+    .big-flower{
+      font-size:6rem;
+      animation:bloom 1.5s ease infinite alternate;
+    }
+
+    .finish-animation h1{
+      margin-top:20px;
+      color:#d63384;
+    }
+
+    .finish-animation p{
+      text-align:center;
+      max-width:500px;
+      line-height:2;
+      margin-top:15px;
+      margin-bottom:10px;
+    }
+
+    .petal{
+      position:absolute;
+      top:-20px;
+      font-size:1.5rem;
+      animation:fall linear forwards;
+      pointer-events:none;
+    }
+
+    audio{
+      width:100%;
+      margin-top:20px;
+      border-radius:20px;
+    }
+
+    .final-message{
+      margin-top:35px;
+      display:none;
+      animation:fadeIn 1.5s ease;
+    }
+
+    .final-inner{
+      background:rgba(255,255,255,0.25);
+      border:1px solid rgba(255,255,255,0.4);
+      border-radius:25px;
+      padding:30px;
+    }
+
+    #musicQuotes{
+      margin-top:25px;
+      min-height:90px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    #quoteText{
+      transition:0.5s;
+      text-align:center;
+      font-size:1.05rem;
+      line-height:2;
+    }
+
+    @keyframes fall{
+      to{
+        transform:translateY(700px) rotate(360deg);
+        opacity:0;
+      }
+    }
+
+    @keyframes bloom{
+      from{
+        transform:scale(1);
+      }
+      to{
+        transform:scale(1.2) rotate(8deg);
+      }
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:scale(0.8);
+      }
+      to{
+        opacity:1;
+        transform:scale(1);
+      }
+    }
+
+    @keyframes pop{
+      from{
+        transform:scale(0);
+      }
+      to{
+        transform:scale(1);
+      }
+    }
+
+    @keyframes fadeUp{
+      from{
+        opacity:0;
+        transform:translateY(30px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+.photo-box{
+  width:100%;
+  margin-top:25px;
+}
+
+.photo-box img{
+  width:100%;
+  max-height:500px;
+  object-fit:cover;
+  border-radius:25px;
+  border:4px solid rgba(255,255,255,0.5);
+  box-shadow:0 10px 30px rgba(255,182,193,0.35);
+}
+
+.memory-card{
+  margin-top:30px;
+  background:rgba(255,255,255,0.25);
+  border:1px solid rgba(255,255,255,0.4);
+  border-radius:25px;
+  padding:30px;
+  animation:fadeIn 1.5s ease;
+}
+    @media(max-width:768px){
+
+      .page{
+        padding:40px 15px;
+        align-items:flex-start;
+      }
+
+      .card{
+        padding:28px;
+        border-radius:25px;
+      }
+
+      h1{
+        font-size:2.2rem;
+        line-height:1.3;
+      }
+
+      h2{
+        font-size:1.7rem;
+      }
+
+      p{
+        font-size:0.97rem;
+        line-height:1.9;
+        text-align:left;
+      }
+
+      button{
+        width:100%;
+      }
+
+      .game-area{
+        min-height:420px;
+      }
+
+      .big-flower{
+        font-size:4.5rem;
+      }
+
+      .finish-animation p{
+        text-align:center;
+      }
+
+      #quoteText{
+        text-align:center;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="particles"></div>
+
+<!-- HALAMAN AWAL -->
+<section class="page">
+
+  <div class="card">
+
+    <h1>Terima Kasih dr. Trina🌸</h1>
+
+    <p style="text-align:center;">
+      Sebuah pesan singkat untuk dr. Trina
+      yang telah menjadi bagian dari cerita magang Saya ✨
+    </p>
+
+    <button onclick="scrollToMessage()">
+      Buka Pesan 💌
+    </button>
+
+  </div>
+
+</section>
+
+<!-- HALAMAN PESAN -->
+<section class="page" id="messagePage">
+
+  <div class="card">
+
+    <h2>Pesan untuk dr. Trina✨</h2>
+
+    <p>
+      Hallo dr. Trina, cepat terasa masa magang sudah selesai.
+      Terima kasih atas bimbingan, kesabaran,
+      serta pengalaman berharga yang telah diberikan
+      selama saya belajar di lingkungan kerja ini.
+    </p>
+
+    <p>
+      Dari yang penuh bingung, lelah, belajar hal baru, 
+      sampai momen ketawa bareng saat mengerjakan poster, 
+      semuanya menjadi kenangan yang sangat berarti meskipun waktunya terasa begitu singkat. 
+      Banyak pelajaran, pengalaman, dan cerita yang akan selalu saya ingat sebagai bekal untuk melangkah ke depannya ✨
+    </p>
+    <p> 
+      Sedikit kata-kata dari saya,
+    </p>
+    <p class="rtk">
+      “Even after you get hurt, keep doing the right thing. With great power, comes great responsibility.”
+    </p>
+    <p>
+      Mohon maaf apabila selama masa magang
+      masih ada terdapat banyak kekurangan.
+      Semoga segala kebaikan yang telah diberikan
+      mendapatkan balasan terbaik🌷.
+    </p>
+
+    <p>
+      BTW, tema ini sengaja saya bikin warna “soft pink” biar agak kecewek-cewek-an.
+      Mohon maaf juga hanya bisa ngasih ini ke dr. Trina💌.
+      Jangan lupa mainin gamenya dibawah ya dok🎮.
+    </p>
+    
+    <p class="highlight">
+      “Awalnya saya datang sebagai magang
+      yang masih banyak bingung,
+      tetapi saya pulang membawa banyak pengalaman
+      dan pelajaran berharga.”
+    </p>
+
+    <h3>
+      🌷 Terima kasih untuk semuanya 🌷
+    </h3>
+
+    <button onclick="scrollToGame()">
+      Lanjut Game 🌸
+    </button>
+
+  </div>
+
+</section>
+
+<!-- HALAMAN GAME -->
+<section class="page" id="gamePage">
+
+  <div class="card">
+
+    <h2>Mini Game 🌸</h2>
+
+    <p style="text-align:center;">
+      Tangkap 5 Bunga!
+    </p>
+
+    <h3 id="score">
+      Score: 0
+    </h3>
+
+    <div class="game-area" id="gameArea"></div>
+
+    <button id="startBtn" onclick="startGame()">
+      Mulai Game 🎮
+    </button>
+
+    <button
+      id="musicBtn"
+      onclick="scrollToMusicPage()"
+      style="display:none;">
+      Lanjut Remainder ✨
+    </button>
+
+  </div>
+
+</section>
+
+<!-- HALAMAN MUSIK -->
+<section class="page" id="musicPage">
+
+  <div class="card">
+
+    <h2>✨ Short Remainder ✨</h2>
+
+    <p style="text-align:center;">
+      Remainder singkat untuk menemani
+      ucapan terima kasih ini 🌸
+      Tunggu selesai ya...
+    </p>
+
+    <!-- QUOTES -->
+    <div id="musicQuotes">
+
+      <p class="highlight" id="quoteText">
+        “Kadang perjalanan terbaik datang
+        dari pertemuan yang tidak terlalu lama.”
+      </p>
+
+    </div>
+
+    <!-- AUDIO -->
+    <audio id="mentorSong" controls>
+
+      <!-- GANTI DENGAN FILE MUSIK -->
+      <source src="adzan.mp3" type="audio/mpeg">
+
+      Browser kamu tidak mendukung audio.
+
+    </audio>
+
+    <!-- FINAL MESSAGE -->
+    <div class="final-message" id="finalCard">
+
+      <div class="final-inner">
+
+        <h2>
+          Short Remainder 💖
+        </h2>
+
+        <p class="highlight">
+          Ketika manusia lupa pada kita, mengabaikan kita, bahkan melalaikan keberadaan kita, Allah tidak pernah berhenti memanggil hamba-Nya.
+        </p>
+
+        <p class="highlight">
+          “Haiya ‘alash sholah…”
+          “Haiya ‘alal falah…”
+        </p>
+
+        <p>
+          Marilah menuju sholat.
+          Marilah menuju kemenangan.
+        </p>
+
+        <p>
+          Padahal sering kali justru kita yang lalai kepada-Nya.
+          Sering menunda.
+          Sering menjauh.
+          Sering datang hanya saat lelah dan terluka.
+        </p>
+
+        <p>
+          Namun Allah tetap memanggil.
+          Bukan untuk menghukum,
+          tetapi untuk menerima kita kembali.
+        </p>
+        <button onclick="scrollToPhotoPage()">
+  Lihat Kenangan 🌸
+</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- HALAMAN FOTO -->
+<section class="page" id="photoPage">
+
+  <div class="card">
+
+    <h2>🌸 Kenangan Magang 🌸</h2>
+
+    <p style="text-align:center;">
+      Sedikit kenangan yang akan selalu diingat ✨
+    </p>
+
+    <!-- FOTO -->
+    <div class="photo-box">
+
+      <!-- GANTI FOTO -->
+      <img
+        src="foto.jpg"
+        alt="Foto Kenangan">
+
+    </div>
+
+    <!-- CARD KATA-KATA -->
+    <div class="memory-card">
+
+      <h3>
+        Terima Kasih 💖
+      </h3>
+
+      <p>
+        Tidak semua pertemuan harus berlangsung lama
+        untuk menjadi berharga.
+      </p>
+
+      <p>
+        Terima kasih sudah menjadi bagian
+        dari perjalanan magang yang penuh
+        pelajaran, pengalaman, dan kenangan baik 🌸
+      </p>
+
+      <p class="highlight">
+        “Beberapa orang hadir bukan hanya
+        untuk ditemui, tetapi untuk diingat.”
+      </p>
+<button onclick="scrollToGalleryPage()">
+  Lihat Kenangan Lain ✨
+</button>
+    </div>
+
+  </div>
+
+</section>
+   <!-- HALAMAN GALERI -->
+<section class="page" id="galleryPage">
+
+  <div class="card">
+
+    <h2>🌸 More Memories 🌸</h2>
+
+    <p style="text-align:center;">
+      Beberapa kenangan kecil yang mungkin sederhana,
+      tapi akan selalu terasa spesial ✨
+    </p>
+
+    <!-- 3 FOTO -->
+    <div class="gallery-grid">
+
+      <img src="foto1.png" alt="Kenangan 1">
+
+      <img src="fotoaz.jpg" alt="Kenangan 2">
+
+      <img src="foto3.png" alt="Kenangan 3">
+
+    </div>
+
+    <!-- CARD KATA -->
+    <div class="memory-card">
+
+      <h3>
+        🌷 Tentang Kenangan 🌷
+      </h3>
+
+      <p>
+        “Mungkin nanti kita akan sibuk dengan jalan masing-masing,
+        tetapi kenangan baik tidak akan pernah benar-benar pergi.”
+      </p>
+
+    <p class="highlight">
+     ✨Yesterday is history, tomorrow is a mystery and today is a gift from Allah ﷻ✨
+    </p>
+    </div>
+
+  </div>
+
+</section>
+<script>
+
+let score = 0;
+let gameInterval;
+let finishShown = false;
+let quoteInterval;
+
+function scrollToMessage(){
+
+  document.getElementById('messagePage').scrollIntoView({
+    behavior:'smooth'
+  });
+
+}
+function scrollToGalleryPage(){
+
+  document.getElementById('galleryPage').scrollIntoView({
+    behavior:'smooth'
+  });
+
+}
+function scrollToGame(){
+
+  document.getElementById('gamePage').scrollIntoView({
+    behavior:'smooth'
+  });
+
+}
+
+function scrollToMusicPage(){
+
+  document.getElementById('musicPage').scrollIntoView({
+    behavior:'smooth'
+  });
+
+}
+
+function startGame(){
+
+  score = 0;
+  finishShown = false;
+
+  document.getElementById('score').innerText =
+  'Score: ' + score;
+
+  clearInterval(gameInterval);
+
+  document.getElementById('gameArea').innerHTML = '';
+
+  document.getElementById('startBtn').style.display =
+  'none';
+
+  document.getElementById('musicBtn').style.display =
+  'none';
+
+  gameInterval = setInterval(createFlower, 700);
+
+}
+function scrollToPhotoPage(){
+
+  document.getElementById('photoPage').scrollIntoView({
+    behavior:'smooth'
+  });
+
+}
+function createFlower(){
+
+  if(finishShown) return;
+
+  const flower = document.createElement('div');
+
+  flower.classList.add('flower');
+
+  flower.innerHTML = '🌸';
+
+  const gameArea = document.getElementById('gameArea');
+
+  const maxX = gameArea.clientWidth - 60;
+  const maxY = gameArea.clientHeight - 60;
+
+  flower.style.left = Math.random() * maxX + 'px';
+  flower.style.top = Math.random() * maxY + 'px';
+
+  flower.onclick = function(){
+
+    score++;
+
+    document.getElementById('score').innerText =
+    'Score: ' + score;
+
+    flower.remove();
+
+    if(score >= 5){
+
+      showFinishAnimation();
+
+    }
+
+  };
+
+  gameArea.appendChild(flower);
+
+  setTimeout(() => {
+
+    flower.remove();
+
+  }, 2000);
+
+}
+
+function showFinishAnimation(){
+
+  finishShown = true;
+
+  clearInterval(gameInterval);
+
+  const gameArea = document.getElementById('gameArea');
+
+  gameArea.innerHTML = `
+
+    <div class="finish-animation">
+
+      <div class="big-flower">🌸</div>
+
+      <h1>Terima Kasih 💖</h1>
+
+      <p>
+        Terima kasih, senang pernah satu perjuangan bareng kamu selama magang 🌷
+      </p>
+
+      <p class="highlight">
+        Assalamualaikum,
+        Jazakillah Khairan dr. Trina🌸
+      </p>
+
+    </div>
+
+  `;
+
+  for(let i=0;i<20;i++){
+
+    const petal = document.createElement('div');
+
+    petal.classList.add('petal');
+
+    petal.innerHTML = '🌸';
+
+    petal.style.left = Math.random() * 100 + '%';
+
+    petal.style.animationDuration =
+    (3 + Math.random() * 3) + 's';
+
+    gameArea.appendChild(petal);
+
+  }
+
+  document.getElementById('musicBtn').style.display =
+  'inline-block';
+
+}
+
+const quotes = [
+
+  "“Terima kasih untuk setiap momen dan pengalaman berharga yang diberikan.”",
+
+  "“Kebaikan kecil sering menjadi kenangan terbesar.”",
+
+  "“Kebaikan yang tulus akan selalu diingat.”",
+  
+  "“Pengalaman terbaik datang dari orang-orang baik.”",
+
+  "“Terima kasih telah menjadi mentor yang sabar dan suportif 🌸”",
+  
+  "“Terima kasih untuk setiap hal kecil yang membuat masa magang terasa menyenangkan.”",
+
+  "“Pengalaman terbaik sering datang dari pertemuan sederhana.”",
+
+  "“Kenangan kecil sering kali menjadi yang paling berharga.”"
+
+
+];
+
+let quoteIndex = 0;
+
+const quoteText =
+document.getElementById('quoteText');
+
+const mentorSong =
+document.getElementById('mentorSong');
+
+mentorSong.addEventListener('play', () => {
+
+  clearInterval(quoteInterval);
+
+  quoteInterval = setInterval(() => {
+
+    quoteIndex++;
+
+    if(quoteIndex >= quotes.length){
+
+      quoteIndex = 0;
+
+    }
+
+    quoteText.style.opacity = 0;
+
+    setTimeout(() => {
+
+      quoteText.innerText =
+      quotes[quoteIndex];
+
+      quoteText.style.opacity = 1;
+
+    },300);
+
+  },4000);
+
+});
+
+mentorSong.addEventListener('ended', () => {
+
+  clearInterval(quoteInterval);
+
+  document.getElementById('musicQuotes').style.display =
+  'none';
+
+  document.getElementById('finalCard').style.display =
+  'block';
+
+  document.getElementById('finalCard').scrollIntoView({
+    behavior:'smooth'
+  });
+
+});
+
+</script>
+
+</body>
+</html>
